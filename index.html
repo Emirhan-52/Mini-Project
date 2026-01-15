@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Smart To-Do List</h1>
+            <p>Plan, Execute, Complete</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Organize Your Daily Tasks</h2>
+                <p>A simple and modern web application to help you manage your tasks efficiently. Add, complete, edit, delete tasks and set reminders with due date and time.</p>
+                <a href="#app" class="btn-primary">Get Started</a>
+            </div>
+        </section>
+
+        <section id="app" class="app-section">
+            <div class="container">
+                <div class="task-input-wrapper">
+                    <input type="text" id="taskInput" placeholder="Enter a new task...">
+                    <input type="date" id="taskDate">
+                    <input type="time" id="taskTime">
+                    <label class="reminder-toggle">
+                        <input type="checkbox" id="taskReminder">
+                        <span>Reminder</span>
+                    </label>
+                    <button id="addTaskBtn" class="btn-add">Add Task</button>
+                </div>
+
+                <div class="filter-wrapper">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+
+                <ul id="taskList" class="task-list"></ul>
+
+                <div class="task-footer">
+                    <span id="taskCount">0 tasks remaining</span>
+                    <button id="clearCompletedBtn" class="btn-clear">Clear Completed</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Add Tasks</h3>
+                        <p>Quickly add new tasks to your list and stay organized.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Mark Complete</h3>
+                        <p>Check off tasks as you complete them and track your progress.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Edit & Delete</h3>
+                        <p>Update task details or remove tasks you no longer need.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Reminders</h3>
+                        <p>Set due date, time and reminders similar to mobile reminder apps.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Filter Tasks</h3>
+                        <p>View all, active, or completed tasks with one click.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Local Storage</h3>
+                        <p>Your tasks are saved automatically and persist across sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Developed by Emirhan Orcun Bayar | Roll Number: 25-657</p>
+            <p>Internet and Web Basics | 2024-2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
